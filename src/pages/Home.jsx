@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import Header from '../components/Header/Header'
 import { GlobalContext } from '../contexts/GlobalContext'
-import { ContainerCards, ContainerHome, DivPresentation, DivProjects, DivText, HrStyled, SkillsContainer, SkillsDiv, TitleProjects, TitleSkills } from './homeStyle'
+import { ContainerCards, ContainerHome, DivProjects, HrStyled, SkillsContainer, SkillsDiv, Title } from './homeStyle'
 import {ProjectCard} from '../components/ProjectCard'
 import SkillCard from '../components/SkillsCard'
 import Footer from '../components/Footer/Footer'
 import Introduction from '../components/Introduction/Introduction'
-import Sidebar from '../components/Sidebar'
+import NavBar from '../components/NavBar'
 
 
 const Home = () => {
@@ -15,13 +15,13 @@ const Home = () => {
 
   return (
     <ContainerHome>
-        <Sidebar/>
+        <NavBar/>
         <Header/>
         <div id="about"></div>
         <Introduction/>
         <HrStyled/>
         <DivProjects>
-            <TitleProjects id="projects">&lt; Projects &gt;</TitleProjects>
+            <Title id="projects">&lt; Projects &gt;</Title>
             <ContainerCards>
                 {projects.map((project) => {
                     return <ProjectCard key={project.id} project={project}/>
@@ -32,7 +32,7 @@ const Home = () => {
             <HrStyled/>
 
         <SkillsContainer id="skills">
-            <TitleSkills >&lt; Skills &gt;</TitleSkills>
+            <Title >&lt; Skills &gt;</Title>
             <SkillsDiv>
                 {skills.map((skill) => {
                     return <SkillCard key={skill.id} skill={skill}/>

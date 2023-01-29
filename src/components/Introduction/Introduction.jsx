@@ -9,7 +9,7 @@ const Introduction = () => {
   const color = '#2C74B3';
 
   return (
-    <Container maxW="4xl" height="85vh" p={{ base: 5, md: 12 }} mt="30vh">
+    <Container maxW="4xl" p={{ base: 5, md: 12 }} mt="200" mb="8">
       <Flex direction={['column', 'column', 'row']}>
         <MotionBox
           opacity="0"

@@ -12,10 +12,10 @@ import {
     { name: '// Contact', path: '#contact' }
   ];
   
-  export default function Sidebar() {
+  export default function NavBar() {
     return (
-      <Box px={2} boxShadow="lg" width="100%" zIndex={1} position="fixed" bg="#144272">
-        <Flex h={12} alignItems="center" justifyContent="space-between" maxW={800} mx="auto">
+      <Box px={2} boxShadow="lg" zIndex={1} position="fixed" bg="#144272">
+        <Flex h={12} alignItems="center" justifyContent="space-around">
               {navLinks.map((link, index) => (
                 <NavLink key={index} {...link} />
               ))}
@@ -33,9 +33,8 @@ import {
   
     return (
       <Link
+        w="auto"
         href={path}
-        px={3}
-        py={1}
         lineHeight="inherit"
         rounded="md"
         _hover={{

@@ -1,5 +1,4 @@
 import { GlobalContext } from "./contexts/GlobalContext"
-import Router from "./routes/Router"
 import pokedex from './assets/pokedex.png'
 import astrodev from './assets/astrodev.png'
 import scientists from './assets/scientists.png'
@@ -18,6 +17,7 @@ import node from './assets/node.svg'
 import sql from './assets/sql.png'
 import aws from './assets/aws.svg'
 import python from './assets/python.svg'
+import Home from "./pages/Home"
 
 
 
@@ -69,7 +69,7 @@ const skills = [{
 } , {
   id: "S02",
   name: "Frontend Development",
-  description: "Design websites in HTML, CSS, JS, React and Next.js.",
+  description: "Design websites in HTML, CSS, JavaScript, React and Next.js.",
   image: frontend,
   icons: [html, css, react]
 } , {
@@ -85,7 +85,7 @@ const context = {projects, skills}
   return (
     <div>
       <GlobalContext.Provider value={context}>
-      <Router/>
+      <Home/>
       </GlobalContext.Provider>
     </div>
   )

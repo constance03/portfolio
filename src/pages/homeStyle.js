@@ -6,21 +6,6 @@ export const ContainerHome = styled.div`
     background-color: #0A2647;
 `;
 
-export const DivPresentation = styled.div`
-    display: flex;
-    flex-direction: row;
-`;
-
-export const DivText = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    width: 70vw;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-`;
-
 export const HrStyled = styled.hr`
     background-color: #2C74B3;
     width: 90vw;
@@ -32,7 +17,7 @@ export const HrStyled = styled.hr`
 export const ContainerCards = styled.div`
     display: flex;
     flex-wrap: wrap;
-    /* height: 30vh; */
+    align-items: center;
     justify-content: center;
     gap: 4vw;
     padding-bottom: 8vh;
@@ -46,15 +31,14 @@ export const DivProjects = styled.div`
     /* justify-content: center; */
 `;
 
-export const TitleProjects = styled.div`
-    padding-top: 8vh;
-    font-size: 5rem;
-    height: 30vh;
-`;
-
-export const TitleSkills = styled.div`
-    font-size: 5rem;
+export const Title = styled.div`
     padding: 8vh 0 4vh 0;
+    font-size: 5rem;
+    text-align: center;
+
+    @media (max-width: 500px) {
+        font-size: 3rem;
+    }
 `;
 
 export const SkillsContainer = styled.div`

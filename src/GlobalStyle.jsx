@@ -7,5 +7,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'League Spartan';
         color: #FAFAFA;
+        width: 100%;
     }
 `;
